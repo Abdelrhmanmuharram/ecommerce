@@ -3,11 +3,13 @@ import 'package:ecommerce/features/auth/data/models/register_request.dart';
 import 'package:ecommerce/features/auth/data/repositories/auth_repository.dart';
 import 'package:ecommerce/features/auth/presentation/cubit/auth_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 
+@singleton
 class AuthCubit extends Cubit<AuthState> {
-  AuthCubit() : super(AuthInitial());
+  final AuthRepository _repository;
 
-  final _repository = AuthRepository();
+  AuthCubit(this._repository) : super(AuthInitial());
 
   Future<void> register(RegisterRequest request) async {
     emit(RegisterLoading());

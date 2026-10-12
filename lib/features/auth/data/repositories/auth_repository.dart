@@ -2,16 +2,18 @@ import 'package:dartz/dartz.dart';
 import 'package:ecommerce/core/errors/exceptions.dart';
 import 'package:ecommerce/core/errors/failure.dart';
 import 'package:ecommerce/features/auth/data/data_source/local/auth_local_data_source.dart';
-import 'package:ecommerce/features/auth/data/data_source/local/auth_local_data_source_impl.dart';
 import 'package:ecommerce/features/auth/data/data_source/remote/auth_remote_data_source.dart';
-import 'package:ecommerce/features/auth/data/data_source/remote/auth_remote_data_source_impl.dart';
 import 'package:ecommerce/features/auth/data/models/login_request.dart';
 import 'package:ecommerce/features/auth/data/models/register_request.dart';
 import 'package:ecommerce/features/auth/data/models/user_model.dart';
+import 'package:injectable/injectable.dart';
 
+@singleton
 class AuthRepository {
-  final AuthRemoteDataSource _remoteDataSource = AuthRemoteDataSourceImpl();
-  final AuthLocalDataSource _localDataSource = AuthLocalDataSourceImpl();
+  final AuthRemoteDataSource _remoteDataSource;
+  final AuthLocalDataSource _localDataSource;
+
+  const AuthRepository(this._localDataSource, this._remoteDataSource);
 
   Future<Either<Failure, UserModel>> register(RegisterRequest request) async {
     try {
