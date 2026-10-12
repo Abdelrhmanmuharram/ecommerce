@@ -67,11 +67,11 @@ class WishlistItemDetails extends StatelessWidget {
                           data: 'EGP ${product['salePrice']}',
                           textStyle:
                               getMediumStyle(
-                                color: ColorManager.appBarTitle.withOpacity(.6),
+                                color: ColorManager.appBarTitle.withValues(alpha: .6),
                               ).copyWith(
                                 letterSpacing: 0.17,
                                 decoration: TextDecoration.lineThrough,
-                                color: ColorManager.appBarTitle.withOpacity(.6),
+                                color: ColorManager.appBarTitle.withValues(alpha: .6),
                                 fontSize: FontSize.s10,
                               ),
                         ),

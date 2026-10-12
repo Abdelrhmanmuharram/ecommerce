@@ -65,7 +65,7 @@ class _HomeTabState extends State<HomeTab> {
   }
 
   void _startImageSwitching() {
-    _timer = Timer.periodic(const Duration(milliseconds: 2500), (Timer timer) {
+    _timer = Timer.periodic(const Duration(seconds: 5), (Timer timer) {
       setState(
         () => _currentIndex =
             (_currentIndex + 1) % _announcementsImagesPaths.length,

@@ -23,12 +23,12 @@ class AnnouncementsSection extends StatelessWidget {
       child: Stack(
         children: [
           AnimatedSwitcher(
-            duration: const Duration(milliseconds: 2000),
+            duration: const Duration(seconds: 1),
             child: Image.asset(
               height: 210.h,
               width: double.infinity,
               imagesPaths[currentIndex],
-              key: ValueKey<int>(currentIndex),
+              key: ValueKey(currentIndex),
             ),
           ),
           SizedBox(

@@ -51,13 +51,13 @@ class ProfileTabState extends State<ProfileTab> {
               Text(
                 'mohamed.N@gmail.com',
                 style: getRegularStyle(
-                  color: ColorManager.primary.withOpacity(.5),
+                  color: ColorManager.primary.withValues(alpha: .5),
                   fontSize: FontSize.s14,
                 ),
               ),
               SizedBox(height: Sizes.s18.h),
               CustomTextField(
-                borderBackgroundColor: ColorManager.primary.withOpacity(.5),
+                borderBackgroundColor: ColorManager.primary.withValues(alpha: .5),
                 readOnly: _isFullNameReadOnly,
                 backgroundColor: ColorManager.white,
                 hint: 'Enter your full name',
@@ -81,7 +81,7 @@ class ProfileTabState extends State<ProfileTab> {
               ),
               SizedBox(height: Sizes.s18.h),
               CustomTextField(
-                borderBackgroundColor: ColorManager.primary.withOpacity(.5),
+                borderBackgroundColor: ColorManager.primary.withValues(alpha: .5),
                 readOnly: _isEmailReadOnly,
                 backgroundColor: ColorManager.white,
                 hint: 'Enter your email address',
@@ -105,7 +105,7 @@ class ProfileTabState extends State<ProfileTab> {
               CustomTextField(
                 onTap: () => setState(() => _isPasswordReadOnly = false),
                 controller: TextEditingController(text: '123456789123456'),
-                borderBackgroundColor: ColorManager.primary.withOpacity(.5),
+                borderBackgroundColor: ColorManager.primary.withValues(alpha: .5),
                 readOnly: _isPasswordReadOnly,
                 backgroundColor: ColorManager.white,
                 hint: 'Enter your password',
@@ -125,7 +125,7 @@ class ProfileTabState extends State<ProfileTab> {
               SizedBox(height: Sizes.s18.h),
               CustomTextField(
                 controller: TextEditingController(text: '01122118855'),
-                borderBackgroundColor: ColorManager.primary.withOpacity(.5),
+                borderBackgroundColor: ColorManager.primary.withValues(alpha: .5),
                 readOnly: _isPhoneReadOnly,
                 backgroundColor: ColorManager.white,
                 hint: 'Enter your mobile no.',
@@ -149,7 +149,7 @@ class ProfileTabState extends State<ProfileTab> {
                 controller: TextEditingController(
                   text: '6th October, street 11.....',
                 ),
-                borderBackgroundColor: ColorManager.primary.withOpacity(.5),
+                borderBackgroundColor: ColorManager.primary.withValues(alpha: .5),
                 readOnly: _isAddressReadOnly,
                 backgroundColor: ColorManager.white,
                 hint: '6th October, street 11.....',

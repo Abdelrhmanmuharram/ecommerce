@@ -26,7 +26,7 @@ class WishlistItem extends StatelessWidget {
         padding: EdgeInsetsDirectional.only(end: Sizes.s8.w),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(Sizes.s16.r),
-          border: Border.all(color: ColorManager.primary.withOpacity(.3)),
+          border: Border.all(color: ColorManager.primary.withValues(alpha: .3)),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -34,7 +34,7 @@ class WishlistItem extends StatelessWidget {
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(Sizes.s16.r),
-                border: Border.all(color: ColorManager.primary.withOpacity(.6)),
+                border: Border.all(color: ColorManager.primary.withValues(alpha: .6)),
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(Sizes.s16.r),

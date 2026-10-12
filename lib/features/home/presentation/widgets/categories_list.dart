@@ -23,15 +23,15 @@ class _CategoriesListState extends State<CategoriesList> {
           border: BorderDirectional(
             top: BorderSide(
               width: Sizes.s2,
-              color: ColorManager.primary.withOpacity(0.3),
+              color: ColorManager.primary.withValues(alpha: 0.3),
             ),
             start: BorderSide(
               width: Sizes.s2,
-              color: ColorManager.primary.withOpacity(0.3),
+              color: ColorManager.primary.withValues(alpha: 0.3),
             ),
             bottom: BorderSide(
               width: Sizes.s2,
-              color: ColorManager.primary.withOpacity(0.3),
+              color: ColorManager.primary.withValues(alpha: 0.3),
             ),
           ),
           borderRadius: BorderRadiusDirectional.only(

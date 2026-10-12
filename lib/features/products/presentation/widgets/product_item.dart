@@ -20,7 +20,7 @@ class ProductItem extends StatelessWidget {
         height: screenSize.height * 0.3,
         decoration: BoxDecoration(
           border: Border.all(
-            color: ColorManager.primary.withOpacity(0.3),
+            color: ColorManager.primary.withValues(alpha: 0.3),
             width: 2,
           ),
           borderRadius: BorderRadius.circular(16.r),

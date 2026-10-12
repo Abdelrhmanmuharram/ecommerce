@@ -25,7 +25,7 @@ class CartItem extends StatelessWidget {
         height: isPortrait ? height * 0.14 : width * 0.23,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.r),
-          border: Border.all(color: ColorManager.primary.withOpacity(0.3)),
+          border: Border.all(color: ColorManager.primary.withValues(alpha: 0.3)),
         ),
         child: Row(
           children: [
@@ -34,7 +34,7 @@ class CartItem extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15.r),
                 border: Border.all(
-                  color: ColorManager.primary.withOpacity(0.3),
+                  color: ColorManager.primary.withValues(alpha: 0.3),
                 ),
               ),
               child: CachedNetworkImage(

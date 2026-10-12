@@ -101,7 +101,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                       Text(
                         'Total price',
                         style: getMediumStyle(
-                          color: ColorManager.primary.withOpacity(.6),
+                          color: ColorManager.primary.withValues(alpha: .6),
                         ).copyWith(fontSize: 18.sp),
                       ),
                       SizedBox(height: 12.h),

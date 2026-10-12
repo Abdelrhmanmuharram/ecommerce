@@ -24,7 +24,7 @@ class ProductDescription extends StatelessWidget {
         ReadMoreText(
           description,
           style: getMediumStyle(
-            color: ColorManager.appBarTitle.withOpacity(.6),
+            color: ColorManager.appBarTitle.withValues(alpha: .6),
           ).copyWith(fontSize: 18.sp),
           trimExpandedText: ' Read Less',
           trimCollapsedText: ' Read More',
